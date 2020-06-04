@@ -1,0 +1,302 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>拟家商务酒店-首页</title>
+<meta name="description" content="拟家商务酒店网站首页，拟家商务酒店（H.L Business Hotel）位于厦门市集美区银江路185号（集美区政府对面）,是一家五星级酒店,提供优质贴心的星级服务,24小时恭侯您莅临!">
+<meta name="Keywords" content="拟家商务酒店官网,拟家商务酒店,拟家商务酒店网站">
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/list.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="cbody"><link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<link href="css/price.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/DateSelect.js"></script>
+<script src="js/a.js"></script>
+<div class="pc1">
+	<div class="pc">
+		<div class="top">
+			<div class="logo">
+				<div class="lg"><img src="images/logo.png" alt="拟家商务酒店" title="拟家商务酒店" /></div>
+				<div class="star">&nbsp;★★★★★</div>
+				<div class="shouji"></div>
+			</div>
+			<div class="htitle">
+				<h1>拟家商务酒店</h1><br /><span class="htitleEn">H.L Business Hotel</span></div>
+			<div class="htopr">
+				<div class="lang">语言：
+					<a href="index.html">中文</a> |
+					<a href="http://en.yeohwahotel.cn/">English</a>
+				</div>
+				<div class="phone">：XXXXXXXXXXX</div>
+				
+				<div class="dizhi">地址：厦门集美区银江路185号(集美区政府对面)</div>
+				<div class="dizhi" style="font-weight: bold;"></div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<ul class="clear">
+				<li class="ge"></li>
+				<li>
+					<a href="index.html">首&nbsp;&nbsp;页</a>
+				</li>
+				<li class="ge"></li>
+				<li>
+					<a href="rooms.html">客房预订</a>
+				</li>
+				<li class="ge"></li>
+				<li>
+					<a href="news/demo.html">会场预订</a>
+				</li>
+				<li class="ge"></li>
+				<li>
+					<a href="news/demo.html">酒店图片</a>
+				</li>
+				<li class="ge"></li>
+				<li>
+					<a href="news/demo.html">周边环境</a>
+				</li>
+				<li class="ge"></li>
+				<li>
+					<a href="news/demo.html">住客留言</a>
+				</li>
+				<li class="ge"></li>
+				<li>
+					<a href="news1.html">新闻资讯</a>
+				</li>
+				<li class="ge"></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="pc">
+	<div class="hc">
+		<div class="hcl">
+			<div class="l01">
+				<div class="l01t">在线查询</div>
+				<div class="l01c">
+					<form method="post" action="rooms.html">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="width:35%; text-align:center;">入住时间：</td>
+								<td style="padding-top:10px; padding-bottom:10px;">
+									<input class="iptchkin" type="text" name="checkindate" id="checkindate" autocomplete="off" readonly="readonly" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width:35%; text-align:center;">离店时间：</td>
+								<td style="padding-top:10px; padding-bottom:10px;">
+									<input class="iptchkin" type="text" name="checkoutdate" id="checkoutdate" autocomplete="off" readonly="readonly" />
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align:center; padding-left:6px;" colspan="2">
+									<input id="setCheckDate" type="image" src="images/searbtn.jpg" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="l02">
+				<div class="l01t">客房预订流程</div>
+				<div class="l02pic"><img src="images/liucheng.jpg" /></div>
+			</div>
+
+			<script type="text/javascript">
+				$(function(){
+					var policyContainer = $('.policy-container');
+					var w = 0;
+					policyContainer.find('.p-item').each(function(i, item){
+						var k = 0;
+						$(item).find('.pcontent').each(function(j, pitem){
+							if($(pitem).text() == ''){
+								k++;
+								$(pitem).hide();
+							}
+						});
+
+						if(k == $(item).find('.pcontent').length){
+							$(item).hide();
+							w++;
+						}
+					});
+
+					if(w == policyContainer.find('.p-item').length){
+						policyContainer.hide();
+					}
+				});
+			</script>
+		</div>
+
+		<div class="hcr1">
+			<div id="onlineBooking" style="display: none;">
+				<div class="r01">
+					<div class="r01l">在线预订 <span class="enlm">Reservations</span></div>
+					<div class="r01r">
+						<a href="index.html">首页</a> &gt; 在线预订</div>
+				</div>
+				<div class="r02">
+					<form method="post" action="rooms.html">
+						<table>
+							<tr>
+								<td>
+									入住时间：<input class="scheckDate" type="text" autocomplete="off" readonly="readonly" name="checkindate" id="checkin" /> 离店时间：
+									<input class="scheckDate" type="text" autocomplete="off" readonly="readonly" name="checkoutdate" id="checkout" />
+								</td>
+								<td>
+									<input type="image" src="images/searchPrice.png" />
+								</td>
+							</tr>
+						</table>
+					</form>
+					<script>
+						$(function(){
+							DateSelect.sCheckInOrOut($('#checkin'), $('#checkout'));
+						});
+					</script>
+				</div>
+
+<table class="tablelist">
+<thead>
+  <tr>
+    <th><input name="checkAll" type="checkbox" id="checkAll" onchange="selectAll()"/>全选/
+    <input name="checkOther" type="checkbox" id="checkOther" onchange="selectOther()"/>反选
+    </th>
+    <th>客房图片</th>
+    <th>客房名称</th>
+    <th>客房类别</th>
+    <th>余房(间）</th>
+    <th>单价(元)</th>
+
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><input name="checkItem" type="checkbox" value="" /></td>
+    <td class="imgtd"><img src="img1.jpg" /></td>
+    <td>环礁泳池大床房</td>
+    <td>标准</td>
+    <td>172</td>
+    <td>¥666.00</td>
+
+  </tr>
+  <tr class="odd">
+    <td><input name="checkItem" type="checkbox" value="" /></td>
+    <td class="imgtd"><img src="img2.jpg" /></td>
+    <td>环礁泳池双床房</td>
+    <td>标准</td>
+    <td>103</td>
+    <td>¥699.00</td>
+
+  </tr>
+  <tr>
+    <td><input name="checkItem" type="checkbox" value="" /></td>
+    <td class="imgtd"><img src="img3.jpg" /></td>
+    <td>豪华海景双床房 </td>
+    <td>豪华</td>
+    <td>96</td>
+    <td>¥1413.00</td>
+
+  </tr>
+  <tr class="odd">
+    <td><input name="checkItem" type="checkbox" value="" /></td>
+    <td class="imgtd"><img src="img4.jpg" /></td>
+    <td>豪华园景别墅</td>
+    <td>豪华</td>
+    <td>16</td>
+    <td>¥1314.00</td>
+
+  </tr>
+</tbody>
+</table>
+<script type="text/javascript">
+//全选或全不选
+function selectAll(){
+    var items=document.getElementsByName("checkItem");
+    var checkAll=document.getElementById("checkAll");
+    var checkOther=document.getElementById("checkOther");
+    checkOther.checked=false;
+    for(var i=0;i<items.length;i++){
+        items[i].checked=checkAll.checked;
+    }
+}
+//反选
+function selectOther(){
+    var items=document.getElementsByName("checkItem");
+    var checkAll=document.getElementById("checkAll");
+    var checkOther=document.getElementById("checkOther");
+    checkAll.checked=false;
+    for(var i=0;i<items.length;i++){
+        items[i].checked=!items[i].checked;
+    }		
+}
+</script>
+      <div class="pagin">
+    <div class="message">共<i class="blue">5</i>页，当前显示第&nbsp;<i class="blue">1&nbsp;</i>页</div>
+    <ul class="paginList">
+      <li class="paginItem"><a href="#"> << <span class="pagepre"></span></a></li>
+      <li class="paginItem current"><a href="#">1</a></li>
+      <li class="paginItem"><a href="#">2</a></li>
+      <li class="paginItem more"><a href="#">...</a></li>
+      <li class="paginItem"><a href="#">5</a></li>
+      <li class="paginItem"><a href="#"> >> <span class="pagenxt"></span></a></li>
+    </ul>
+
+			
+  </div>
+    	<div class="book1">
+    		<a href="rooms.html">
+				<input id="setCheckDate" type="image" src="images/searbtn1.jpg" /></a>
+		</div>
+
+		</div>
+
+				<div class="rooms" id="roomList">
+	
+				</div>
+				<div class="rooms" id="testRoomList"></div>
+				<div class="r02 lineheight28">1、请选择您需要的入住时间和离店时间查询房价，不同时间段价格可能不一样；<br /> 2、报价为散客现付最低优惠价，即打折后的价格，已经低于前台散客价；
+					<br /> 3、如您到店时间晚于预订保留时间、或房间紧张时，为确保入住，可能要求您提供信用卡资料进行担保；
+					<br /> 4、在线提交订单后，预订信息会同步进入我们的订单库，请勿再通过其他途径预订，以免产生重复预订。
+				</div>
+				<div class="r03" id="channel-booking"></div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script src="js/RoomInfo.js" type="text/javascript"></script>
+<script src="js/RoomList.js" type="text/javascript">
+	
+</script>
+
+<div class="i-pp" id="tool" style="display:none;">
+	<div class="i-pp-bd">
+		<div class="P-tips"></div>
+	</div>
+</div>
+
+<div class="pc2">
+	<div class="pc">
+		<div class="foot">
+			<a href="index.html" title="拟家商务酒店">网站首页</a> |
+			<a href="news/demo.html" title="关于我们">关于我们</a> |
+			<a href="news/demo.html" title="人才招聘">人才招聘</a><br /> Copyright @ HLHotel.cn All rights reserved<br /> 中国•厦门市　拟家商务酒店　H.L Business Hotel ICP备11101838号 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5737925'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/stat.php%3Fid%3D5737925%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		</div>
+	</div>
+</div></body>
+</html>
+
+<script type="text/javascript">
+    RoomChannel.getRoomList("2020-06-02", "2020-06-03", "51402001", 49289, 448663);
+</script>
