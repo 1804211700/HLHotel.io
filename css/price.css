@@ -1,0 +1,100 @@
+@charset "gb2312";
+/* ## Price @@@@@@@
++++++++++++++++++++++ */
+
+.roomSp{ color:#467CFB;}
+
+
+/* 锟铰版弹锟斤拷锟斤拷 */
+.i-pp { position: absolute; z-index: 9999; height: auto; padding: 0; border: 1px solid #6aa4d9; background: #fff; box-shadow: -3px 3px 5px rgba(106,164,217,0.2); zoom: 1; cursor: default;}
+.i-pp-tp:after, .i-pp-bd:after { clear: both; display: block; content: '\20';}
+.i-pp-tp { height: 30px; line-height: 30px; background-color: #f2f7fa;}
+.i-pp-tp-title { margin: 0 10px; font: 700 14px/30px Arial,微锟斤拷锟脚猴拷,锟斤拷锟斤拷; color: #333;}
+.i-pp-tp-tab { float: left;}
+.i-pp-tp-tab li { float: left; padding: 0 10px; font-size: 12px; font-family: '微锟斤拷锟脚猴拷','锟斤拷锟斤拷'; color: #000; cursor: pointer;}
+.i-pp-tp-tab li.actived { background: #fff; font-size: 14px; font-weight: bold; color: #119eb0; cursor: default;}
+.i-pp-close { display: block; position: absolute; height: 20px; top: 4px; right: 5px; padding: 0 5px; line-height: 20px; border: 1px solid #74b4db; background: #81c2e9; color: #fff; cursor: pointer;}
+.i-pp-close:hover { border: 1px solid #409ada; background: #409ada; color: #fff;}
+.i-pp-close:active { border: 1px solid #146dac; background: #146dac;}
+.i-pp-bd { padding: 1px; zoom:1;}
+
+
+/* 锟桔革拷 */
+.P { clear: both; margin: 10px 0;}
+.P:after { display: block; clear: both; content: '\20';}
+.P table { width: 100%;}
+.P tr:nth-child(even) {background: #fff}
+.P tr:nth-child(odd) {background: #f8f8f8}
+/* 锟街讹拷 */
+.P-fn-fx, .P-fn-cx, .P-fn-kd, .P-fn-sm, .P-fn-zc, .P-fn-jg, .P-fn-jj, .P-fn-cz  { height: 20px; padding: 0; border: 1px solid #e3e3e3; background: #f8f8f8; font: 500 12px/20px Arial,锟斤拷锟斤拷; text-align: center; vertical-align: middle; color: #888;}
+.P-fn-fx { padding-left: 10px !important; text-align: left !important;}
+.P-fn-cx { width: 50px;}
+.P-fn-kd { width: 50px;}
+.P-fn-sm { width: 160px;}
+.P-fn-zc { width: 50px;}
+.P-fn-jg { width: 80px;}
+.P-fn-jj { width: 80px;}
+.P-fn-cz { width: 51px;}
+/* 锟街讹拷锟斤拷锟斤拷 */
+.P-dt-fx, .P-dt-cx, .P-dt-kd, .P-dt-sm, .P-dt-zc, .P-dt-jg, .P-dt-jj, .P-dt-cz { padding: 5px 0; border: 1px solid #e3e3e3; font: 500 12px/1.5 Arial,锟斤拷锟斤拷; text-align: center; vertical-align: middle; color: #000;}
+.P-dt-fx { text-align: left !important;}
+/* 锟斤拷锟斤拷细锟斤拷 */
+.P-fx { margin-left: 10px; color: #296d01;}
+.P-cx, .P-kd, .P-zc { color: #666;}
+.P-sm { color: #296d01;}
+.P-jg { font-weight: 500; font-size: 16px; color: #f60;}
+.P-jj { font-weight: 500; font-size: 16px; color: 000;}
+.P-cz { display: block; width: 45px; height: 22px; margin: 0 auto; line-height: 22px; text-align: center;}
+	.P-cz-0 { background: #ecffd1 url(/bg/bookingbtn.png) 0 -22px no-repeat; font-weight: bold; color: #b3cd80; cursor: not-allowed;}
+	.P-cz-0:hover { color: #b3cd80;}
+	.P-cz-1 { background: #78b316 url(/bg/bookingbtn.png) 0 0 no-repeat; font-weight: bold; color: #fff;}
+	.P-cz-1:hover { background: #78b316; color: #fff;}
+
+.P-tips { overflow: hidden; text-align: left; zoom: 1;}
+.P-tips dl:after { display: block; clear: both; content: '\20';}
+.P-tips dl { margin: -1px; padding: 10px 10px 10px 80px; border-top: 1px solid #eee; zoom: 1;}
+.P-tips dt { float: left; width: 60px; height: 20px; margin: 0 0 0 -70px; padding: 0 0 0 5px; line-height: 20px; font-weight: 700; color: #fff; _display: inline; background-color: #aaa6fb;}
+.P-tips dd { line-height: 20px;}
+
+.P-pricescurve { overflow: hidden; zoom: 1;}
+.P-pricescurve th { width: 55px; border: 1px solid #e1ebf1; background: #f2f7fa; text-align: center;}
+.P-pricescurve td { padding: 5px 0; border: 1px solid #e1ebf1; text-align: center;}
+.P-pricescurve time { display: block; font: 400 12px/16px Arial;}
+.P-pricescurve .P-pricescurve-price { color: #f60; font: 700 14px/18px Arial; vertical-align: top;}
+.P-pricescurve sub { display: inline; font-weight: 500; font-size: 10px; *font-weight: 500; *font-size: 12px; vertical-align: top;}
+
+
+.ui-tooltip {
+	max-width: 624px;
+	padding: 0;
+	color: #333333;
+	border-radius: 3px;
+	font: 14px '寰蒋闆呴粦';
+	box-shadow: none;
+}
+.ui-widget.ui-widget-content {
+	border-color: #aacffc;
+}
+.price-table{
+	
+}
+.price-table>thead>tr{
+	background-color: #f2f7fa;
+}
+.price-table th, .price-table td{
+	padding: 5px 10px;
+	border: 1px solid #e1ebf1;
+}
+.price-table td>time, .price-table td>sub{
+	display: block;
+}
+.price-table .P-pricescurve-price{
+	vertical-align: middle;
+}
+.price-table .P-pricescurve-price sub{
+	vertical-align: text-top;
+	font-weight: bold;
+}
+.i-pp-bd{
+	max-width: 300px;
+}
